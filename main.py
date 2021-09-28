@@ -1,3 +1,4 @@
+##this file will act as a menu for the user to select which part of my program to go to
 import calculator
 import realator
 print("Please Select:")
@@ -6,6 +7,6 @@ print("2: I need a mortgage calculator.")
 number = int(input())
 if number == 1:
     realator.intro()
-    realator.function_1()
+    realator.randomize()
 elif number == 2:
     calculator.writeFile(calculator.person)

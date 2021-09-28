@@ -18,7 +18,7 @@ def calculate():
     print(round(payment, 2))
     return (round(payment, 2))
 
-##this will determine which category they fall into and display places they can live
+##this will determine which category they fall into and display places they can live from a file
 def readFile():
     payment = calculate()
     print("Based on your monthly payment, you could afford the average house in:")
@@ -34,8 +34,8 @@ def readFile():
     elif payment > 3700:
         print(high.read())
         return payment
-## lets make a class for the person, make a list for each payment section, need to implement loop
 
+## lets make a class for the person to store all their info in the same place
 class person:
     name = " "
     adress = " "
@@ -43,6 +43,9 @@ class person:
     gender = " "
     mortgage = " "
 
+## this function will ask the user if they want to send their information to real estate agents. 
+## If they select yes it will ask for their info/ put it into a class and write it to a file
+## This file could hypothetically be sent to real estate agents
 def writeFile(person):
 
     payment = readFile()
@@ -59,15 +62,5 @@ def writeFile(person):
         info.write("Name: " + person.name + " | " + "Expected Mortagage: " + person.mortgage +  " | " + "Adress: " + person.address + " | " + "Email: " + person.email + " | " + "Gender: " + person.gender + "\n")
     else:
         print("Thank you for using my program.")
- ##real estate menu, can see file, see the list,
-
-
 
         
-        
-
-
-
-##calculate() ## 5.25, 10, 100,000
-##readFile()
-##writeFile()
