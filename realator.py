@@ -14,7 +14,10 @@ def randomize():
         place = input("Enter Place:")
         places.append(place)
     number = random.randint(0, 4)
-    print("Your randomized location is: " + places[number])
+    if places[number] == " ":
+        print("Please fill out all 5 places: ")
+    else:
+        print("Your randomized location is: " + places[number])
 
     
     

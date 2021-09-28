@@ -10,3 +10,5 @@ if number == 1:
     realator.randomize()
 elif number == 2:
     calculator.writeFile(calculator.person)
+else:
+    print("Invalid Input")
