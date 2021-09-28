@@ -8,4 +8,4 @@ if number == 1:
     realator.intro()
     realator.function_1()
 elif number == 2:
-    calculator.writeFile()
+    calculator.writeFile(calculator.person)

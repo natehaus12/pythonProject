@@ -35,16 +35,28 @@ def readFile():
         print(high.read())
         return payment
 ## lets make a class for the person, make a list for each payment section, need to implement loop
-def writeFile():
+
+class person:
+    name = " "
+    adress = " "
+    email = " "
+    gender = " "
+    mortgage = " "
+
+def writeFile(person):
+
     payment = readFile()
-    string = str(payment)
+    person.mortgage = str(payment)
 
     info = open("info.txt", "a")
     print("Would you like to send your information to agents in these areas?")
     decision = input("Enter 1 for YES. Enter 2 for NO. ")
     if decision == "1":
-        name = input("Please Enter your first and last name: ")
-        info.write("Name: " + name + " | " + "Expected Mortagage: " + string + "\n")
+        person.name = input("Please Enter your first and last name: ")
+        person.address = input("Current adress:")
+        person.email = input("Email:")
+        person.gender = input("Gender:")
+        info.write("Name: " + person.name + " | " + "Expected Mortagage: " + person.mortgage +  " | " + "Adress: " + person.address + " | " + "Email: " + person.email + " | " + "Gender: " + person.gender + "\n")
     else:
         print("Thank you for using my program.")
  ##real estate menu, can see file, see the list,
