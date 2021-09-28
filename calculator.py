@@ -22,9 +22,9 @@ def calculate():
 def readFile():
     payment = calculate()
     print("Based on your monthly payment, you could afford the average house in:")
-    high = open("Sprint_1\high.txt" ,"r")
-    mid = open("Sprint_1\mid.txt", "r")
-    low = open("Sprint_1\low.txt", "r")
+    high = open("high.txt" ,"r")
+    mid = open("mid.txt", "r")
+    low = open("low.txt", "r")
     if payment < 2500:
         print(low.read())
         return payment
@@ -39,7 +39,7 @@ def writeFile():
     payment = readFile()
     string = str(payment)
 
-    info = open("Sprint_1\info.txt", "a")
+    info = open("info.txt", "a")
     print("Would you like to send your information to agents in these areas?")
     decision = input("Enter 1 for YES. Enter 2 for NO. ")
     if decision == "1":
