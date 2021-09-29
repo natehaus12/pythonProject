@@ -4,7 +4,7 @@ This is a fairly basic python program. It has 2 sections. One is a mortgage calc
 In then diplays from a file places that user could hypothetically afford based on the payment. It also gives the user an option to input their information that will be
 written to a file that could hypothetically be sent to real estate angents in their corresponding areas.
 
-The other section is sort of funny. This would be used for a new real estate agent that has no idea where to move to start their practice. This section of the programs
+The other section is sort of funny. This would be used for a new real estate agent that has no idea where to move to start their practice. This section of the program
 prompts the user for 5 different places and then randomly selects one for them. I got the idea from a fantasy football program I Used that randomly selects who
 you should start for you if it could go either way.
 
@@ -12,9 +12,7 @@ Python is a very well known programming language. Before this project I did not 
 to become comfortable with Python.
 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video]https://www.youtube.com/watch?v=tRyfdb2fPZk
 
 # Development Environment
 
@@ -30,3 +28,4 @@ This is only written in python
 
 - verify the places input by the user are real places
 - connect this with a real database to link the mortgages to more realistic price ranges 
+- make the randomizer available for any number not just 5
